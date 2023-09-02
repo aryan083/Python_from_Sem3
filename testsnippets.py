@@ -1,9 +1,6 @@
-x=56
-if x>5:
-    print("TRUE")
-elif  x>50:
-    print( "true")
+num=(input("Enter number"))
+if(num==reversed(num)):
+    print("given number is pelindrome")
 else:
-    print("False")
-x=5
-print(x)
+    print("given number is pelindrome")
+

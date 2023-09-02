@@ -98,7 +98,7 @@ for i in range(0,101):
         OddSum= OddSum+i
 print("Sum of odd Number ",OddSum,"\n Sum of Even Number ",EvenSum)
 
-#Task wwwwwrite loop for series 10,20,30,40,50...300
+#Task write loop for series 10,20,30,40,50...300
 for i in range (10, 301,10):
     print(i)
     i=i+10
@@ -119,7 +119,7 @@ for i in range(1,num+1):
 if(countflag==0):
     print("number ",num," is prime ")
 else:
-    print("number ",num," is prime ")
+    print("number ",num," is not prime ")
 
 #Task 6 Reverse a number 
 num=(input("Enter number"))
@@ -127,16 +127,18 @@ print(num[::-1])
 
 #task 7 Binary to decimal convertion 
 num=int(input("Enter a binary number "))
-decimal, i = 0, 0
-while(num > 0):
-    dec = num % 10
-    decimal = decimal + dec * pow(2, i)        
-    binary = num//10
-    i += 1
-
-print(decimal)
-
-
+def binaryTodecimal(num):
+    decimal = 0
+    power = 1
+    while num>0:
+        rem = num%10
+        num = num//10
+        decimal += rem*power
+        power = power*2
+        
+    return decimal
+convertedone=binaryTodecimal(num)
+print(convertedone)
 #task 8 check if number is  pelindrome
 num=(input("Enter number"))
 if(num==reversed(num)):
