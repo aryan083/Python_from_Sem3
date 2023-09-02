@@ -4,7 +4,10 @@
 *.pdf
 *.exe
 *.zip
+<<<<<<< HEAD
 *.png
 *.txt
 *.jpg
+=======
+>>>>>>> refs/remotes/origin/main
 D:/Semster 3/python/assignenment for PWP/
